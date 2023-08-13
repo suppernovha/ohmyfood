@@ -1,15 +1,18 @@
-@charset "UTF-8";
-/* ORDRE POUR DECLARER
-Utils
-	variables $color_2
-	fonctions @mixin… darken($color, 10%)
-	mixin @mixin heading-shadow($color: $color_1….) @if (…) @else(…)
-	placeholders
-Vendors
-Base
-Composants
-Layout
-Pages
-Thèmes */
+/* Error: expected more input.
+ *   ,
+ * 1 | @import 
+ *   |         ^
+ *   '
+ *   scss/utils/_variables.scss 1:9  @import
+ *   scss/main.scss 13:9             root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected more input.\a   \2577 \a 1 \2502  @import \a   \2502          ^\a   \2575 \a   scss/utils/_variables.scss 1:9  @import\a   scss/main.scss 13:9             root stylesheet";
+}
