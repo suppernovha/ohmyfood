@@ -1,21 +1,17 @@
 /**** FONT PROPERTIES *****/
 body {
     font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
-.restaurant__title {
-    font-family: 'shrikhand', sans-serif;
-}
 
-.button, footer {
-    color: white;
-    background-color: #353535;
-}
-
+/**** Typography ****/
 .fonctionnement-list__number {
     font-size: 14px;
 }
@@ -58,6 +54,15 @@ a {
 
 .section-title, .restaurant-card__title {
     font-weight: 700;
+} 
+/**** Règles à répartir *****/
+.restaurant__title {
+    font-family: 'shrikhand', sans-serif;
+}
+
+footer {
+    color: white;
+    background-color: #353535;
 }
 
 .restaurant-card__img {
@@ -65,6 +70,5 @@ a {
 }
 
 .restaurant__img {
-    width: 30%;
     height: 275px;
 }
