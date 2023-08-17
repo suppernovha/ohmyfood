@@ -22,6 +22,16 @@ a {
   height: 21px;
 }
 
+.fa-utensils {
+  font-size: 13px;
+  margin-right: 11px;
+}
+
+.fa-handshake-angle {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
 /**** Typography ****/
 h1, h2, h3, p {
   margin: 0;
@@ -81,11 +91,6 @@ h1, h2, h3, p {
 }
 
 /**** Règles à répartir *****/
-footer {
-  color: white;
-  background-color: #353535;
-}
-
 .restaurant__img {
   height: 275px;
 }
@@ -164,6 +169,30 @@ footer {
   position: absolute;
   left: 17px;
   top: 40%;
+}
+
+.footer {
+  padding: 22px 25px;
+  background-color: #353535;
+}
+.footer__title {
+  font-family: "shrikhand";
+  font-size: 18px;
+  color: white;
+}
+.footer__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+}
+.footer__icon {
+  color: white;
+}
+.footer__txt {
+  color: white;
 }
 
 .searchbar {

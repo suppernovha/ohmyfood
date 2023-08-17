@@ -1,0 +1,23 @@
+.footer {
+    padding: 22px 25px;
+    background-color: #353535;
+    &__title {
+        font-family: 'shrikhand';
+        font-size: 18px;
+        color: white;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        color: white;
+    }
+    &__txt {
+        color: white;
+    }
+}
