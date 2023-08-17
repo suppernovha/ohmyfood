@@ -16,8 +16,7 @@ a {
 }
 
 .fa-heart {
-    width: 22px;
-    height: 21px;
+    font-size: 22px;
 }
 
 .fa-utensils {
@@ -79,16 +78,11 @@ h1, h2, h3, p {
     font-weight: 500;
 }
 
-.section-title, .restaurant-card__title {
+.section-title, .restaurant-card__title, .menu-card__price {
     font-weight: 700;
 } 
 
 /***** Marges ****/
 .section-restaurant-title {
     margin-bottom: 8px;
-}
-/**** Règles à répartir *****/
-
-.restaurant__img {
-    height: 275px;
 }

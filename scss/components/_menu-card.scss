@@ -1,0 +1,23 @@
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__header {
+        border-bottom: 3px solid $tertiary-color;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+    &__choice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        border-radius: 15px;
+        @include box-shadow;
+        background-color: white;
+    }
+    &__txt {
+        @include flex-column;
+        gap: 5px;
+    }
+}
