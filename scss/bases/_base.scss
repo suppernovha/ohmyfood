@@ -15,9 +15,17 @@ a {
     color: black;
 }
 
+.fa-heart {
+    width: 22px;
+    height: 21px;
+}
 /**** Typography ****/
 h1, h2, h3, p {
     margin: 0;
+}
+
+.restaurant__title {
+    font-family: 'shrikhand', sans-serif;
 }
 
 .fonctionnement-choice__number {
@@ -63,18 +71,16 @@ h1, h2, h3, p {
 .section-title, .restaurant-card__title {
     font-weight: 700;
 } 
-/**** Règles à répartir *****/
-.restaurant__title {
-    font-family: 'shrikhand', sans-serif;
+
+/***** Marges ****/
+.section-restaurant-title {
+    margin-bottom: 8px;
 }
+/**** Règles à répartir *****/
 
 footer {
     color: white;
     background-color: #353535;
-}
-
-.restaurant-card__img {
-    height: 231px;
 }
 
 .restaurant__img {

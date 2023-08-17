@@ -1,0 +1,26 @@
+.restaurant-card {
+    border-radius: 15px;
+    background-color: white;
+    &__img {
+       object-fit:cover; 
+       border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+       width: 100%;
+       height: 156px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 25px 12px 13px;
+    }
+    &__txt {
+        gap: 5px;
+    }
+    &__title {
+
+    }
+    &__subtitle {
+
+    }
+}
