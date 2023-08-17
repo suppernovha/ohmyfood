@@ -84,6 +84,14 @@ footer {
   height: 275px;
 }
 
+.button {
+  padding: 13px 18.75px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: white;
+}
+
 .header, .header--boxshadow {
   position: relative;
   width: 100%;
@@ -111,4 +119,15 @@ footer {
   gap: 17px;
   padding: 15.5px;
   background-color: rgb(234, 234, 234);
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 39px 32px 57px;
+  gap: 23px;
+  text-align: center;
+  background-color: rgb(246, 246, 246);
 }/*# sourceMappingURL=main.css.map */

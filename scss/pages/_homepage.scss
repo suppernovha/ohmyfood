@@ -4,3 +4,12 @@
     padding: 15.5px;
     background-color: $fourth-background;
 }
+
+.reservation {
+    @include flex-mid;
+    flex-direction: column;
+    padding: 39px 32px 57px;
+    gap: 23px;
+    text-align: center;
+    background-color: $second-background;
+}
