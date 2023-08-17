@@ -8,12 +8,20 @@ body {
   padding: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
 /**** Typography ****/
+h1, h2, h3, p {
+  margin: 0;
+}
+
 .fonctionnement-list__number {
   font-size: 14px;
 }
@@ -81,6 +89,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 22px 0 11px;
 }
 .header--boxshadow {
@@ -93,4 +102,13 @@ footer {
   position: absolute;
   left: 17px;
   top: 40%;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  padding: 15.5px;
+  background-color: rgb(234, 234, 234);
 }/*# sourceMappingURL=main.css.map */

@@ -6,12 +6,20 @@ body {
     padding: 0;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
 /**** Typography ****/
+h1, h2, h3, p {
+    margin: 0;
+}
+
 .fonctionnement-list__number {
     font-size: 14px;
 }

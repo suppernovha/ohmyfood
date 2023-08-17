@@ -1,0 +1,6 @@
+.searchbar {
+    @include flex-mid;
+    gap: 17px;
+    padding: 15.5px;
+    background-color: $fourth-background;
+}
