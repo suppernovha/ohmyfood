@@ -1,0 +1,74 @@
+/**** FONT PROPERTIES *****/
+body {
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/**** Typography ****/
+.fonctionnement-list__number {
+    font-size: 14px;
+}
+
+.menu-card__subtitle {
+    font-size: 15px;
+}
+
+.search-bar__txt, .button, .fonctionnement-list__txt, footer li, .menu-card__header {
+    font-size: 16px;
+}
+
+.restaurant-card__subtitle {
+    font-size: 17px;
+}
+
+.reservation__subtitle, .restaurant-card__title, .menu-card__title {
+    font-size: 18px;
+}
+
+.section-title {
+    font-size: 24px;
+}
+
+.restaurant__title {
+    font-size: 28px;
+}
+
+.reservation__subtitle, .restaurant-card__subtitle, .menu-card__header, .menu-card__subtitle {
+    font-weight: 300;
+}
+
+.restaurant__title {
+    font-weight: 400;
+}
+
+.search-bar__txt, .button, .fonctionnement-list__number, .fonctionnement-list__txt, footer li, .menu-card__title {
+    font-weight: 500;
+}
+
+.section-title, .restaurant-card__title {
+    font-weight: 700;
+} 
+/**** Règles à répartir *****/
+.restaurant__title {
+    font-family: 'shrikhand', sans-serif;
+}
+
+footer {
+    color: white;
+    background-color: #353535;
+}
+
+.restaurant-card__img {
+    height: 231px;
+}
+
+.restaurant__img {
+    height: 275px;
+}

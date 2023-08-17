@@ -1,0 +1,19 @@
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 22px 0 11px;
+    &--boxshadow {
+        @extend .header;
+        @include box-shadow;
+    }
+    &__logo {
+        width: 162px;
+    }
+    &__icon {
+        position: absolute;
+        left: 17px;
+        top: 40%;
+    }
+}
