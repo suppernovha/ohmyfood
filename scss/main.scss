@@ -1,13 +1,6 @@
-/* ORDRE POUR DECLARER
-Utils
-	variables $color_2
-	fonctions @mixin… darken($color, 10%)
-	mixin @mixin heading-shadow($color: $color_1….) @if (…) @else(…)
-	placeholders
-Vendors
-Base
-Composants
-Layout
-Pages
-Thèmes */
 @import "utils/variables";
+@import "utils/mixin";
+@import "utils/variables";
+@import "layout/header";
+@import "pages/homepage";
+
