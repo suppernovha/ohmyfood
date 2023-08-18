@@ -1,0 +1,68 @@
+.menu-card {
+    &__header {
+        animation: header-translate 300ms  ease-out;
+    }
+    &__choice {
+        &--1 {
+        animation: progress-choice 300ms 200ms backwards;
+        // animation: name duration timing-function delay iteration-count direction fill-mode;
+            & .menu-card__txt, .menu-card__price {
+                animation: progress-txt 300ms 200ms backwards;
+            }
+        }
+        &--2 {
+            animation: progress-choice 500ms 350ms backwards;
+            & .menu-card__txt, .menu-card__price {
+                animation: progress-txt 300ms 350ms backwards;
+            }
+        }
+        &--3 {
+            animation: progress-choice 500ms 500ms backwards;
+            & .menu-card__txt, .menu-card__price {
+                animation: progress-txt 300ms 500ms backwards;
+            }
+        }
+    }
+}
+
+@keyframes progress-choice {
+    0% {
+        transform: translatex(-500px);
+    }
+    100% {
+        transform: translatex(1);
+
+    }
+}
+
+@keyframes progress-txt {
+    0% {
+        transform: translatex(-500px);
+        opacity: 0;
+    }
+    40% {
+        transform: translateX(-500px);
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(1);
+        opacity: 1;
+    }
+}
+
+@keyframes header-translate {
+    0% {
+        transform: translatex(1000px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(1);
+        opacity: 1;
+
+    }
+}

@@ -234,6 +234,65 @@ h1, h2, h3, p {
   text-align: center;
 }
 
+.menu-card__header {
+  animation: header-translate 300ms ease-out;
+}
+.menu-card__choice--1 {
+  animation: progress-choice 300ms 200ms backwards;
+}
+.menu-card__choice--1 .menu-card__txt, .menu-card__choice--1 .menu-card__price {
+  animation: progress-txt 300ms 200ms backwards;
+}
+.menu-card__choice--2 {
+  animation: progress-choice 500ms 350ms backwards;
+}
+.menu-card__choice--2 .menu-card__txt, .menu-card__choice--2 .menu-card__price {
+  animation: progress-txt 300ms 350ms backwards;
+}
+.menu-card__choice--3 {
+  animation: progress-choice 500ms 500ms backwards;
+}
+.menu-card__choice--3 .menu-card__txt, .menu-card__choice--3 .menu-card__price {
+  animation: progress-txt 300ms 500ms backwards;
+}
+
+@keyframes progress-choice {
+  0% {
+    transform: translatex(-500px);
+  }
+  100% {
+    transform: translatex(1);
+  }
+}
+@keyframes progress-txt {
+  0% {
+    transform: translatex(-500px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(-500px);
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(1);
+    opacity: 1;
+  }
+}
+@keyframes header-translate {
+  0% {
+    transform: translatex(1000px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(1);
+    opacity: 1;
+  }
+}
 .header, .header--boxshadow {
   position: relative;
   width: 100%;
