@@ -1,6 +1,16 @@
 .restaurant-card {
+    position: relative;
     border-radius: 15px;
     background-color: white;
+    &__sticker {
+        position: absolute;
+        top: 13px;
+        right: 12px;
+        padding: 7px 13px;
+        border-radius: 2px;
+        background-color: $tertiary-color;
+        color: darken($tertiary-color, 35%);
+    }
     &__img {
        object-fit: cover; 
        border-top-left-radius: 15px;

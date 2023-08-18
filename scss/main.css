@@ -39,7 +39,7 @@ h1, h2, h3, p {
   font-family: "shrikhand", sans-serif;
 }
 
-.fonctionnement-choice__number {
+.fonctionnement-choice__number, .restaurant-card__sticker {
   font-size: 14px;
 }
 
@@ -150,8 +150,18 @@ h1, h2, h3, p {
   color: rgb(147, 86, 220);
 }
 .restaurant-card {
+  position: relative;
   border-radius: 15px;
   background-color: white;
+}
+.restaurant-card__sticker {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  padding: 7px 13px;
+  border-radius: 2px;
+  background-color: rgb(153, 226, 208);
+  color: #2c9c81;
 }
 .restaurant-card__img {
   -o-object-fit: cover;
