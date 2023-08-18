@@ -189,22 +189,31 @@ h1, h2, h3, p {
   border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
+  overflow: hidden;
+}
+.menu-card__choice:hover .menu-card__anim {
+  width: 20%;
+}
+.menu-card__choice:hover .menu-card__icon {
+  opacity: 1;
 }
 .menu-card__anim {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 20%;
+  width: 0%;
   height: 67.5px;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transform: scalex(0);
+  transition: all 300ms;
 }
 .menu-card__icon {
   color: white;
   width: 100%;
+  opacity: 0;
+  transition: opacity 300ms 100ms;
 }
 .menu-card__txt {
   display: flex;
