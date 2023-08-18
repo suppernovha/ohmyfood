@@ -89,19 +89,36 @@ h1, h2, h3, p {
 }
 
 .button {
+  position: relative;
+  align-self: center;
   padding: 13px 18.75px;
   border-radius: 25px;
   border: none;
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #ff79da, #9356dc);
   color: white;
-  align-self: center;
+  transition: transform 250ms;
+  z-index: 1;
+}
+.button:hover::after {
+  opacity: 0.2;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.55);
+  border-radius: 25px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 .button--command {
   padding: 16px 49px;
-}
-
-.coucou {
-  color: black;
 }
 
 .fonctionnement-choice {
@@ -113,7 +130,7 @@ h1, h2, h3, p {
   gap: 23px;
   border-radius: 20px;
   background-color: #f6f6f6;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .fonctionnement-choice__number {
   position: absolute;
@@ -121,7 +138,7 @@ h1, h2, h3, p {
   border-radius: 30px;
   padding: 5px 8px 4px;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 .fonctionnement-choice__icon {
   font-size: 16px;
@@ -130,7 +147,7 @@ h1, h2, h3, p {
   color: #7e7e7e;
 }
 .fonctionnement-choice__icon--selected {
-  color: #9356DC;
+  color: #9356dc;
 }
 .restaurant-card {
   border-radius: 15px;
@@ -161,7 +178,7 @@ h1, h2, h3, p {
   gap: 12px;
 }
 .menu-card__header {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   padding-bottom: 5px;
   width: 40px;
 }
@@ -169,15 +186,43 @@ h1, h2, h3, p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 15px;
   border-radius: 15px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
+}
+.menu-card__anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  height: 67.5px;
+  background-color: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scalex(0);
+}
+.menu-card__icon {
+  color: white;
+  width: 100%;
 }
 .menu-card__txt {
   display: flex;
   flex-direction: column;
+  width: 85%;
   gap: 5px;
+  padding: 12px 0 12px 15px;
+  overflow: hidden;
+}
+.menu-card__title, .menu-card .menu-card__subtitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-card__price {
+  width: 15%;
+  padding: 12px 15px 12px 5px;
+  text-align: center;
 }
 
 .header, .header--boxshadow {

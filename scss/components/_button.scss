@@ -1,16 +1,35 @@
-.button {
+.button{
+    position: relative;
+    align-self: center;
     padding: 13px 18.75px;
     border-radius: 25px;
     border: none;
-    background: linear-gradient(180deg, $secondary-color, $primary-color);
+    @include button-shadow;
+    background: $button-background; 
     color: rgb(255, 255, 255);
-    align-self: center;
+    transition: transform 250ms; 
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 0.2;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.55);
+        border-radius: 25px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
     &--command {
         padding: 16px 49px;
     }
-    
-}
-.coucou {
-    color: black;
     
 }
