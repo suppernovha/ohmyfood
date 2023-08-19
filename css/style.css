@@ -384,11 +384,11 @@ h1, h2, h3, p {
   animation: translate-ball 1200ms 200ms ease-in-out infinite;
 }
 .loader__icon--4 {
-  color: #ff79da;
+  color: #99e2d0;
   animation: translate-ball 1200ms 300ms ease-in-out infinite;
 }
 .loader__icon--5 {
-  color: #99e2d0;
+  color: #ff79da;
   animation: translate-ball 1200ms 400ms ease-in-out infinite;
 }
 

@@ -10,7 +10,7 @@
     width: 100%;
     background-color: $second-background;
     animation: translate-loader 3500ms forwards;
-    &__shadows {
+    &__shadows{
         display: flex;
     }
     &__icon {
@@ -56,11 +56,11 @@
             animation: translate-ball 1200ms 200ms ease-in-out infinite;
         }
         &--4 {
-            color: $secondary-color;
+            color: $tertiary-color;
             animation: translate-ball 1200ms 300ms ease-in-out infinite;
         }
         &--5 {
-            color: $tertiary-color;
+            color: $secondary-color;
             animation: translate-ball 1200ms 400ms ease-in-out infinite;
         }
     }
