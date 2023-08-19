@@ -304,6 +304,137 @@ h1, h2, h3, p {
     opacity: 1;
   }
 }
+.heart-anim__empty {
+  position: absolute;
+  right: 17px;
+}
+.heart-anim__fill {
+  color: transparent;
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 17px;
+  opacity: 0;
+  transition: all 300ms;
+}
+.heart-anim__fill:hover, .heart-anim__fill .heart-anim__fill {
+  opacity: 1;
+}
+.heart-anim--position {
+  right: 25px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  width: 100%;
+  background-color: #f6f6f6;
+  animation: translate-loader 3500ms forwards;
+}
+.loader__shadows {
+  display: flex;
+}
+.loader__icon {
+  font-size: 22px;
+  margin: 10px;
+}
+.loader__icon--shadow {
+  z-index: -1;
+  margin: 8px;
+  background-color: grey;
+  border-radius: 30px;
+  filter: blur(6px);
+  width: 30px;
+  height: 4px;
+}
+.loader__icon--shadow--1 {
+  animation: shadow-opacity 1200ms ease-in-out infinite;
+}
+.loader__icon--shadow--2 {
+  animation: shadow-opacity 1200ms 100ms ease-in-out infinite;
+}
+.loader__icon--shadow--3 {
+  animation: shadow-opacity 1200ms 200ms ease-in-out infinite;
+}
+.loader__icon--shadow--4 {
+  animation: shadow-opacity 1200ms 300ms ease-in-out infinite;
+}
+.loader__icon--shadow--5 {
+  animation: shadow-opacity 1200ms 400ms ease-in-out infinite;
+}
+.loader__icon--1 {
+  color: #9356dc;
+  animation: translate-ball 1200ms ease-in-out infinite;
+}
+.loader__icon--2 {
+  color: #ff79da;
+  animation: translate-ball 1200ms 100ms ease-in-out infinite;
+}
+.loader__icon--3 {
+  color: #9356dc;
+  animation: translate-ball 1200ms 200ms ease-in-out infinite;
+}
+.loader__icon--4 {
+  color: #ff79da;
+  animation: translate-ball 1200ms 300ms ease-in-out infinite;
+}
+.loader__icon--5 {
+  color: #99e2d0;
+  animation: translate-ball 1200ms 400ms ease-in-out infinite;
+}
+
+@keyframes translate-ball {
+  0% {
+    transform: translateY(20px);
+    transform-origin: 100%;
+  }
+  25% {
+    transform: translateY(-40px);
+    transform-origin: 100%;
+  }
+  45% {
+    transform: translateY(20px);
+    transform-origin: 100%;
+  }
+  100% {
+    transform: translateY(20px);
+    transform-origin: 100%;
+  }
+}
+@keyframes shadow-opacity {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes translate-loader {
+  0% {
+    transform: translateX(0);
+  }
+  99% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-9999px);
+  }
+}
 .header, .header--boxshadow {
   position: relative;
   width: 100%;

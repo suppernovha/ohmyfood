@@ -1,0 +1,23 @@
+.heart-anim {
+    &__empty {
+        position: absolute;
+        right: 17px;  
+    }
+    &__fill {
+        color: transparent;
+        background-image: linear-gradient(180deg, $secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        position: absolute;
+        right: 17px;
+        opacity: 0;
+        transition: all 300ms;
+        &:hover, .heart-anim__fill {
+            opacity: 1;
+
+        }
+    }
+    &--position {
+        right: 25px;
+    }
+}
