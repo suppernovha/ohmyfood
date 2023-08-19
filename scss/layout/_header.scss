@@ -5,12 +5,18 @@
     justify-content: center;
     align-items: center;
     padding: 22px 0 11px;
+    @media (min-width: 1024px) {
+        padding: 30px 17px 32px;
+    }
     &--boxshadow {
         @extend .header;
-        @include box-shadow;
+        @include header-shadow;
     }
     &__logo {
         width: 162px;
+        @media (min-width: 1024px) {
+            width: 200px;
+        }
     }
     &__icon {
         position: absolute;

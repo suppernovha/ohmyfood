@@ -38,7 +38,7 @@ h1, h2, h3, p {
     font-family: 'shrikhand', sans-serif;
 }
 
-.fonctionnement-choice__number {
+.fonctionnement-choice__number, .restaurant-card__sticker {
     font-size: 14px;
 }
 
@@ -82,6 +82,11 @@ h1, h2, h3, p {
     font-weight: 700;
 } 
 
+.reservation__title {
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
+}
 /***** Marges ****/
 .section-restaurant-title {
     margin-bottom: 8px;

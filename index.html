@@ -14,6 +14,20 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loader__balls">
+            <i class="loader__icon loader__icon--1 fa-solid fa-circle"></i>
+            <i class="loader__icon loader__icon--2 fa-solid fa-circle"></i>
+            <i class="loader__icon loader__icon--3 fa-solid fa-circle"></i>
+            <i class="loader__icon loader__icon--4 fa-solid fa-circle"></i>
+        </div>
+        <div class="loader__shadows">
+            <div class="loader__icon--shadow loader__icon--shadow--1"></div>
+            <div class="loader__icon--shadow loader__icon--shadow--2"></div>
+            <div class="loader__icon--shadow loader__icon--shadow--3"></div>
+            <div class="loader__icon--shadow loader__icon--shadow--4"></div>
+        </div>
+    </div>
     <div class="main-container">
         <header>
             <div class="header--boxshadow">
@@ -52,54 +66,62 @@
             </section>
             <section class="restaurants">
                 <h2 class="section-title section-restaurant-title">Restaurants</h2>
-                <a href="/restaurants/page_1.html">
-                    <article class="restaurant-card">
-                        <img src="images/restaurants/la_palette_du_gout.jpg" alt="" class="restaurant-card__img">
-                        <div class="restaurant-card__info">
-                            <div class="restaurant-card__txt">
-                                <p class="restaurant-card__title">La palette du goût</p>
-                                <p class="restaurant-card__subtitle">Ménilmontant</p>
+                <div class="restaurants__container">
+                    <a class="restaurant-card__link" href="/restaurants/page_1.html">
+                        <article class="restaurant-card">
+                            <div class="restaurant-card__sticker">Nouveau</div>
+                            <img src="images/restaurants/la_palette_du_gout.jpg" alt="" class="restaurant-card__img">
+                            <div class="restaurant-card__info">
+                                <div class="restaurant-card__txt">
+                                    <p class="restaurant-card__title">La palette du goût</p>
+                                    <p class="restaurant-card__subtitle">Ménilmontant</p>
+                                </div>
+                                <i class="heart-anim--position heart-anim__empty fa-regular fa-heart"></i>
+                                <i class="heart-anim--position heart-anim__fill fa-solid fa-heart"></i>
                             </div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </article>
-                </a>
-                <a href="/restaurants/page_2.html">
-                    <article class="restaurant-card">
-                        <img src="images/restaurants/la_note_enchantee.jpg" alt="" class="restaurant-card__img">
-                        <div class="restaurant-card__info">
-                            <div class="restaurant-card__txt">
-                                <p class="restaurant-card__title">La note enchantée</p>
-                                <p class="restaurant-card__subtitle">Charonne</p>
+                        </article>
+                    </a>
+                    <a href="/restaurants/page_2.html">
+                        <article class="restaurant-card">
+                            <div class="restaurant-card__sticker">Nouveau</div>
+                            <img src="images/restaurants/la_note_enchantee.jpg" alt="" class="restaurant-card__img">
+                            <div class="restaurant-card__info">
+                                <div class="restaurant-card__txt">
+                                    <p class="restaurant-card__title">La note enchantée</p>
+                                    <p class="restaurant-card__subtitle">Charonne</p>
+                                </div>
+                                <i class="heart-anim--position heart-anim__empty fa-regular fa-heart"></i>
+                                <i class="heart-anim--position heart-anim__fill fa-solid fa-heart"></i>
                             </div>
-                            <i class="fa-regular fa-heart "></i>
-                        </div>
-                    </article>
-                </a>
-                <a href="/restaurants/page_3.html">
-                    <article class="restaurant-card">
-                        <img src="images/restaurants/a_la_francaise.jpg" alt="" class="restaurant-card__img">
-                        <div class="restaurant-card__info">
-                            <div class="restaurant-card__txt">
-                                <p class="restaurant-card__title">À la française</p>
-                                <p class="restaurant-card__subtitle">Cité Rouge</p>
+                        </article>
+                    </a>
+                    <a href="/restaurants/page_3.html">
+                        <article class="restaurant-card">
+                            <img src="images/restaurants/a_la_francaise.jpg" alt="" class="restaurant-card__img">
+                            <div class="restaurant-card__info">
+                                <div class="restaurant-card__txt">
+                                    <p class="restaurant-card__title">À la française</p>
+                                    <p class="restaurant-card__subtitle">Cité Rouge</p>
+                                </div>
+                                <i class="heart-anim--position heart-anim__empty fa-regular fa-heart"></i>
+                                <i class="heart-anim--position heart-anim__fill fa-solid fa-heart"></i>
                             </div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </article>
-                </a>
-                <a href="/restaurants/page_4.html">
-                    <article class="restaurant-card">
-                        <img src="images/restaurants/le_delice_des_sens.jpg" alt="" class="restaurant-card__img">
-                        <div class="restaurant-card__info">
-                            <div class="restaurant-card__txt">
-                                <p class="restaurant-card__title">Le délice des sens</p>
-                                <p class="restaurant-card__subtitle">Folie-Méricourt</p>
+                        </article>
+                    </a>
+                    <a href="/restaurants/page_4.html">
+                        <article class="restaurant-card">
+                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="" class="restaurant-card__img">
+                            <div class="restaurant-card__info">
+                                <div class="restaurant-card__txt">
+                                    <p class="restaurant-card__title">Le délice des sens</p>
+                                    <p class="restaurant-card__subtitle">Folie-Méricourt</p>
+                                </div>
+                                <i class="heart-anim--position heart-anim__empty fa-regular fa-heart"></i>
+                                <i class="heart-anim--position heart-anim__fill fa-solid fa-heart"></i>
                             </div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </a>
+                </div>
             </section>
         </main>
         <footer class="footer">

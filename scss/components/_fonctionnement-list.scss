@@ -7,7 +7,10 @@
     gap: 23px;
     border-radius: 20px;
     background-color: $second-background;
-    @include box-shadow;
+    @include fonctionnement-shadow;
+    @media (min-width: 1024px) {
+        width: 33%;
+    }
     &__number {
         position: absolute;
         left: -12px;
