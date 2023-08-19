@@ -100,10 +100,6 @@ h1, h2, h3, p {
   padding: 16px 49px;
 }
 
-.coucou {
-  color: black;
-}
-
 .fonctionnement-choice {
   position: relative;
   display: flex;
