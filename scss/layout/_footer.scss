@@ -1,14 +1,32 @@
 .footer {
     padding: 22px 25px;
     background-color: #353535;
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media (min-width: 1024px) {
+        gap: 90px;
+        justify-content: flex-end;
+        padding: 64px 70px 30px;
+    }
     &__title {
         font-family: 'shrikhand';
         font-size: 18px;
         color: white;
+        @media (min-width: 768px) {
+            order: 2;
+    }
     }
     &__list {
         list-style-type: none;
         padding-left: 0;
+        @media (min-width: 768px) {
+            display: flex;
+            gap: 14px;
+            order: 1;
+    }
     }
     &__row {
         display: flex;

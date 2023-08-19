@@ -2,6 +2,9 @@
     &__empty {
         position: absolute;
         right: 17px;  
+        @media (min-width: 768px) {
+            right: 120px;
+    }
     }
     &__fill {
         color: transparent;
@@ -16,6 +19,9 @@
             opacity: 1;
 
         }
+        @media (min-width: 768px) {
+            right: 120px;
+    }
     }
     &--position {
         right: 25px;

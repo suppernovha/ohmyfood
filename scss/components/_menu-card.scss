@@ -14,9 +14,13 @@
         @include menu-shadow;
         background-color: white;
         overflow: hidden;
+        min-width: 300px;
         &:hover{
             & .menu-card__anim {
                 width: 20%;
+                @media (min-width: 1024px) {
+                    width: 13%;
+                }
             }
             & .menu-card__icon {
                 opacity: 1;
