@@ -1,6 +1,13 @@
 .restaurant {
+    @media (min-width: 1440px) {
+        display: flex;
+        flex-direction: column;
+    }
     &__container {
         position: relative;
+        @media (min-width: 1440px) {
+            align-self: center;
+    }
     }
     &__img {
         object-fit: cover;
@@ -28,6 +35,9 @@
             margin-left: 192px;
             margin-right: 192px;
         }
+        @media (min-width: 1440px) {
+            width: 1048px;
+    }
     }
     &__header {
         display: flex;

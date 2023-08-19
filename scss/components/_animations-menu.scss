@@ -7,19 +7,19 @@
         animation: progress-choice 300ms 200ms backwards;
         // animation: name duration timing-function delay iteration-count direction fill-mode;
             & .menu-card__txt, .menu-card__price {
-                animation: progress-txt 300ms 200ms backwards;
+                animation: progress-txt 400ms 200ms backwards;
             }
         }
         &--2 {
             animation: progress-choice 500ms 350ms backwards;
             & .menu-card__txt, .menu-card__price {
-                animation: progress-txt 300ms 350ms backwards;
+                animation: progress-txt 400ms 350ms backwards;
             }
         }
         &--3 {
             animation: progress-choice 500ms 500ms backwards;
             & .menu-card__txt, .menu-card__price {
-                animation: progress-txt 300ms 500ms backwards;
+                animation: progress-txt 400ms 500ms backwards;
             }
         }
     }
@@ -28,10 +28,14 @@
 @keyframes progress-choice {
     0% {
         transform: translatex(-500px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
     }
     100% {
         transform: translatex(0);
-
+        opacity: 1;
     }
 }
 

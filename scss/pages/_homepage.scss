@@ -21,21 +21,24 @@
     @include flex-column;
     padding: 48px 20px 68px;
     gap: 35px;
+    @media (min-width: 1440px) {
+        max-width: 1300px;
+        margin: auto;
+    }  
     &__list {
         @include flex-column;
         gap: 25px;
         @media (min-width: 1024px) {
             flex-direction: row;
             justify-content: space-between;
-        }
+        }  
     }
     @media (min-width: 768px) {
         padding-left: 120px;
         padding-right: 120px;
     }
     @media (min-width: 1024px) {
-        padding-left: 207px;
-        padding-right: 207px;
+        padding: 50px 180px;
     }
 }
 
@@ -50,18 +53,36 @@
         padding-right: 120px;
     }
     @media (min-width: 1024px) {
-        padding-left: 207px;
-        padding-right: 207px;
+        padding: 30px 180px;
     }
+    @media (min-width: 1440px) {
+        
+    }  
     &__container {
-        @include flex-column;
-        gap: 50px;
+        gap: 18px;
         width: 100%;
         @media (min-width: 1024px) {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
         }
+    }
+    &__column {
+        @include flex-column;
+        gap: 18px;
+        @media (min-width: 1024px) {
+            gap: 50px;
+            width: 50%;
+        }
+        @media (min-width: 1440px) {
+            align-items: center;
+            max-width: 550px;
+        }  
+    }
+    &__header {
+        @media (min-width: 1440px) {
+            width: 1100px;
+            align-self: center;
+        } 
     }
 }

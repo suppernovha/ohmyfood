@@ -141,6 +141,8 @@ h1, h2, h3, p {
 @media (min-width: 1024px) {
   .fonctionnement-choice {
     width: 33%;
+    padding: 28px 10px 28px 30px;
+    gap: 20px;
   }
 }
 .fonctionnement-choice__number {
@@ -167,7 +169,12 @@ h1, h2, h3, p {
 }
 @media (min-width: 1024px) {
   .restaurant-card {
-    width: 480px;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant-card {
+    width: 530px;
   }
 }
 .restaurant-card__sticker {
@@ -222,11 +229,6 @@ h1, h2, h3, p {
 .menu-card__choice:hover .menu-card__anim {
   width: 20%;
 }
-@media (min-width: 1024px) {
-  .menu-card__choice:hover .menu-card__anim {
-    width: 13%;
-  }
-}
 .menu-card__choice:hover .menu-card__icon {
   opacity: 1;
 }
@@ -274,27 +276,32 @@ h1, h2, h3, p {
   animation: progress-choice 300ms 200ms backwards;
 }
 .menu-card__choice--1 .menu-card__txt, .menu-card__choice--1 .menu-card__price {
-  animation: progress-txt 300ms 200ms backwards;
+  animation: progress-txt 400ms 200ms backwards;
 }
 .menu-card__choice--2 {
   animation: progress-choice 500ms 350ms backwards;
 }
 .menu-card__choice--2 .menu-card__txt, .menu-card__choice--2 .menu-card__price {
-  animation: progress-txt 300ms 350ms backwards;
+  animation: progress-txt 400ms 350ms backwards;
 }
 .menu-card__choice--3 {
   animation: progress-choice 500ms 500ms backwards;
 }
 .menu-card__choice--3 .menu-card__txt, .menu-card__choice--3 .menu-card__price {
-  animation: progress-txt 300ms 500ms backwards;
+  animation: progress-txt 400ms 500ms backwards;
 }
 
 @keyframes progress-choice {
   0% {
     transform: translatex(-500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
   }
   100% {
     transform: translatex(0);
+    opacity: 1;
   }
 }
 @keyframes progress-txt {
@@ -516,6 +523,11 @@ h1, h2, h3, p {
     padding: 64px 70px 30px;
   }
 }
+@media (min-width: 1440px) {
+  .footer {
+    justify-content: center;
+  }
+}
 .footer__title {
   font-family: "shrikhand";
   font-size: 18px;
@@ -546,6 +558,24 @@ h1, h2, h3, p {
 }
 .footer__txt {
   color: white;
+}
+@media (min-width: 1024px) {
+  .footer__block {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__block {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 90px;
+  }
 }
 
 .searchbar {
@@ -579,6 +609,12 @@ h1, h2, h3, p {
   padding: 48px 20px 68px;
   gap: 35px;
 }
+@media (min-width: 1440px) {
+  .fonctionnement {
+    max-width: 1300px;
+    margin: auto;
+  }
+}
 .fonctionnement__list {
   display: flex;
   flex-direction: column;
@@ -598,8 +634,7 @@ h1, h2, h3, p {
 }
 @media (min-width: 1024px) {
   .fonctionnement {
-    padding-left: 207px;
-    padding-right: 207px;
+    padding: 50px 180px;
   }
 }
 
@@ -618,27 +653,57 @@ h1, h2, h3, p {
 }
 @media (min-width: 1024px) {
   .restaurants {
-    padding-left: 207px;
-    padding-right: 207px;
+    padding: 30px 180px;
   }
 }
 .restaurants__container {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  gap: 18px;
   width: 100%;
 }
 @media (min-width: 1024px) {
   .restaurants__container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+  }
+}
+.restaurants__column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (min-width: 1024px) {
+  .restaurants__column {
+    gap: 50px;
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurants__column {
+    align-items: center;
+    max-width: 550px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurants__header {
+    width: 1100px;
+    align-self: center;
   }
 }
 
+@media (min-width: 1440px) {
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .restaurant__container {
   position: relative;
+}
+@media (min-width: 1440px) {
+  .restaurant__container {
+    align-self: center;
+  }
 }
 .restaurant__img {
   object-fit: cover;
@@ -671,6 +736,11 @@ h1, h2, h3, p {
     padding: 51px 210px 40px;
     margin-left: 192px;
     margin-right: 192px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant__menu {
+    width: 1048px;
   }
 }
 .restaurant__header {

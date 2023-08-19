@@ -10,6 +10,9 @@
     @include fonctionnement-shadow;
     @media (min-width: 1024px) {
         width: 33%;
+        padding: 28px 10px 28px 30px;
+        gap: 20px;
+
     }
     &__number {
         position: absolute;

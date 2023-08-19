@@ -2,9 +2,13 @@
     position: relative;
     border-radius: 15px;
     background-color: white;
+
     @media (min-width: 1024px) {
-        width: 480px;
+        width: 100%;
     }
+    @media (min-width: 1440px) {
+        width: 530px;
+    }  
     &__sticker {
         position: absolute;
         top: 13px;
