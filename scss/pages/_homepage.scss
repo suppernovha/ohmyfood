@@ -87,10 +87,9 @@
         width: 100%;
         @media (min-width: 1024px) {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         max-width: 1045px;
-        gap: 18px;
+        gap: 50px;
         }
     }
     &__column {
@@ -99,11 +98,11 @@
         max-width: 540px;
         gap: 18px;
         @media (min-width: 1024px) {
-            gap: 50px;
-            width: 46%;
-
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1045px;
+            gap: 90px;
         }
-
     }
     &__header {
        // @media (min-width: 1440px) {
