@@ -28,7 +28,7 @@ a {
 
 .fa-handshake-angle {
   font-size: 12px;
-  margin-right: 8px;
+  margin-right: 7.5px;
 }
 
 /**** Typography ****/
@@ -564,15 +564,13 @@ h1, h2, h3, p {
     order: 1;
   }
 }
-.footer__row {
-  display: flex;
-  align-items: center;
-}
 .footer__icon {
   color: white;
 }
 .footer__txt {
   color: white;
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   .footer__block {

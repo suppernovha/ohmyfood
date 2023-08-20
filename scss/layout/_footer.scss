@@ -31,15 +31,13 @@
             order: 1;
     }
     }
-    &__row {
-        display: flex;
-        align-items: center;
-    }
     &__icon {
         color: white;
     }
     &__txt {
         color: white;
+        display: flex;
+        align-items: center;
     }
     &__block {
         @media (min-width: 1024px) {
