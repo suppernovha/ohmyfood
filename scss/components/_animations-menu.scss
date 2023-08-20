@@ -22,6 +22,12 @@
                 animation: progress-txt 400ms 500ms backwards;
             }
         }
+        &--4 {
+            animation: progress-choice 500ms 650ms backwards;
+            & .menu-card__txt, .menu-card__price {
+                animation: progress-txt 400ms 650ms backwards;
+            }
+        }
     }
 }
 

@@ -20,19 +20,31 @@
 
 .fonctionnement {
     @include flex-column;
-    align-items: flex-start;
     width: 100%;
-    max-width: 540px;
+    align-items: center;
     padding: 48px 20px 68px;
     gap: 35px;
     @media (min-width: 768px) {
-        width: 80%;
+
+        
     }  
     @media (min-width: 1024px) {
         width: 80%;
         max-width: 1045px;
-    }  
+        align-self: center;
+        padding: 48px 0 68px;
 
+    }  
+    &__block {
+        @include flex-column;
+        width: 100%;
+        max-width: 540px; 
+        gap: 35px;
+        @media (min-width: 1024px) {
+            max-width: 1045px;
+            
+        } 
+    }
     &__list {
         @include flex-column;
         width: 100%;
@@ -76,8 +88,7 @@
         @media (min-width: 1024px) {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-
+        justify-content: space-between;
         max-width: 1045px;
         gap: 18px;
         }
@@ -89,7 +100,7 @@
         gap: 18px;
         @media (min-width: 1024px) {
             gap: 50px;
-            width: 50%;
+            width: 46%;
 
         }
 
