@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  min-width: 320px;
 }
 
 *, *::before, *::after {
@@ -210,6 +211,14 @@ h1, h2, h3, p {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
+  max-width: 528px;
+}
+@media (min-width: 1024px) {
+  .menu-card {
+    width: 80%;
+    min-width: 528px;
+  }
 }
 .menu-card__header {
   border-bottom: 3px solid #99e2d0;
@@ -224,7 +233,6 @@ h1, h2, h3, p {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
   overflow: hidden;
-  min-width: 300px;
 }
 .menu-card__choice:hover .menu-card__anim {
   width: 20%;
@@ -337,6 +345,12 @@ h1, h2, h3, p {
   position: absolute;
   right: 17px;
 }
+@media (min-width: 1024px) {
+  .heart-anim__empty--menu {
+    position: absolute;
+    right: -22px;
+  }
+}
 .heart-anim__fill {
   color: transparent;
   background-image: linear-gradient(180deg, #ff79da, #9356dc);
@@ -352,7 +366,13 @@ h1, h2, h3, p {
 }
 @media (min-width: 768px) {
   .heart-anim__fill {
-    right: 120px;
+    right: 17px;
+  }
+}
+@media (min-width: 1024px) {
+  .heart-anim__fill--menu {
+    position: absolute;
+    right: -22px;
   }
 }
 .heart-anim--position {
@@ -695,6 +715,12 @@ h1, h2, h3, p {
 .restaurant__container {
   position: relative;
 }
+@media (min-width: 768px) {
+  .restaurant__container {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (min-width: 1440px) {
   .restaurant__container {
     align-self: center;
@@ -713,6 +739,7 @@ h1, h2, h3, p {
 .restaurant__menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 32px 17px 55px;
@@ -724,13 +751,14 @@ h1, h2, h3, p {
   .restaurant__menu {
     padding-left: 120px;
     padding-right: 120px;
+    min-width: 768px;
+    width: 73%;
   }
 }
 @media (min-width: 1024px) {
   .restaurant__menu {
-    padding: 51px 210px 40px;
-    margin-left: 192px;
-    margin-right: 192px;
+    width: 73%;
+    align-items: center;
   }
 }
 @media (min-width: 1440px) {
@@ -739,20 +767,18 @@ h1, h2, h3, p {
   }
 }
 .restaurant__header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .restaurant__header {
-    position: relative;
-  }
+  width: 100%;
+  max-width: 528px;
 }
 @media (min-width: 1024px) {
   .restaurant__header {
-    position: relative;
     justify-content: center;
-    min-width: 300px;
+    padding-right: 24px;
+    width: auto;
   }
 }
 .restaurant__icon {
