@@ -2,7 +2,12 @@
     &__empty {
         position: absolute;
         right: 17px;  
-
+        &--menu {
+            @media (min-width: 1024px) {
+                position: absolute;
+                right: -22px;
+            }
+        }
     }
     &__fill {
         color: transparent;
@@ -15,11 +20,16 @@
         transition: all 300ms;
         &:hover, .heart-anim__fill {
             opacity: 1;
-
         }
         @media (min-width: 768px) {
-            right: 120px;
-    }
+            right: 17px;
+        }
+        &--menu {
+            @media (min-width: 1024px) {
+                position: absolute;
+                right: -22px;
+            }
+        }
     }
     &--position {
         right: 25px;

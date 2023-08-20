@@ -1,6 +1,15 @@
 .menu-card {
     @include flex-column;
     gap: 12px;
+    width: 100%;
+    max-width: 528px;
+    @media (min-width: 768px) {
+
+    }
+    @media (min-width: 1024px) {
+        width: 80%;
+        min-width: 528px;
+    }
     &__header {
         border-bottom: 3px solid $tertiary-color;
         padding-bottom: 5px;
@@ -14,7 +23,6 @@
         @include menu-shadow;
         background-color: white;
         overflow: hidden;
-        min-width: 300px;
         &:hover{
             & .menu-card__anim {
                 width: 20%;
