@@ -7,6 +7,11 @@ body {
     min-width: 320px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -91,4 +96,5 @@ h1, h2, h3, p {
 /***** Marges ****/
 .section-restaurant-title {
     margin-bottom: 8px;
+    max-width: 540px;
 }
