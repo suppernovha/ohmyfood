@@ -337,11 +337,6 @@ h1, h2, h3, p {
   position: absolute;
   right: 17px;
 }
-@media (min-width: 768px) {
-  .heart-anim__empty {
-    right: 120px;
-  }
-}
 .heart-anim__fill {
   color: transparent;
   background-image: linear-gradient(180deg, #ff79da, #9356dc);
@@ -751,13 +746,13 @@ h1, h2, h3, p {
 @media (min-width: 768px) {
   .restaurant__header {
     position: relative;
-    justify-content: center;
   }
 }
 @media (min-width: 1024px) {
   .restaurant__header {
     position: relative;
     justify-content: center;
+    min-width: 300px;
   }
 }
 .restaurant__icon {

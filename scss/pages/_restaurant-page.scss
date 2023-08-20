@@ -45,11 +45,11 @@
         align-items: center;
         @media (min-width: 768px) {
             position: relative;
-            justify-content: center;
         }
         @media (min-width: 1024px) {
             position: relative;
             justify-content: center;
+            min-width: 300px;
         }
     }
     &__icon {
