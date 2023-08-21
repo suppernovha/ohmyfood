@@ -112,6 +112,7 @@ h1, h2, h3, p {
   color: white;
   transition: transform 250ms;
   z-index: 1;
+  cursor: pointer;
 }
 .button:hover::after {
   opacity: 0.2;
@@ -585,6 +586,9 @@ h1, h2, h3, p {
   color: white;
   display: flex;
   align-items: center;
+}
+.footer__txt a {
+  color: white;
 }
 @media (min-width: 1024px) {
   .footer__block {

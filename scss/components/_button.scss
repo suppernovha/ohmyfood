@@ -9,6 +9,7 @@
     color: rgb(255, 255, 255);
     transition: transform 250ms; 
     z-index: 1;
+    cursor: pointer;
     &:hover {
         &::after {
             opacity: 0.2;
@@ -31,5 +32,4 @@
     &--command {
         padding: 16px 49px;
     }
-    
 }

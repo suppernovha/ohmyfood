@@ -38,6 +38,9 @@
         color: white;
         display: flex;
         align-items: center;
+        & a {
+            color: white;
+        }
     }
     &__block {
         @media (min-width: 1024px) {
